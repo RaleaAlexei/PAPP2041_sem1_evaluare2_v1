@@ -16,7 +16,7 @@ const ListaTari = ({ tari }) => {
           {tari.map(tara => (
             <tr key={tara.alpha3Code}>
 				<td><Link to={`/tara/${tara.name}`}>{tara.name}</Link></td>
-				<td>{tara.population}</td>
+				<td>{tara.capital}</td>
 				<td>{tara.area}</td>
             </tr>
           ))}
